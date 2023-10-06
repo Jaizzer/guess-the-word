@@ -1,4 +1,4 @@
-// Run the game only after 0.15 seconds to ensure that HTML has fully rendered before prompting the user.
+// Run the game only after 0.2 seconds to ensure that HTML has fully rendered before prompting the user.
 setTimeout(function () {
     runGame();
 }, 200);
