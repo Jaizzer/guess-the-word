@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Word</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+    <div id="main-container" class="hidden">
+
+        <div class="game-title">
+            <img src="./img/logo.png" alt="Man guessing something">
+            Guess The Word
+        </div>
+
+        <form>
+            <input type="text" required maxlength="1">
+            <input type="text" required maxlength="1">
+            <input type="text" required maxlength="1">
+            <input type="text" required maxlength="1">
+
+            <div class="actions">
+                <button type="submit" id="submit">Submit</button>
+                <button type="button" id="reset">Reset</button>
+                <button type="button" id="new">Reveal</button>
+            </div>
+        </form>
+
+        <div class="symbol-indicator-container">
+            <div class="symbol-indicator"></div>
+            <div class="symbol-indicator"></div>
+            <div class="symbol-indicator"></div>
+            <div class="symbol-indicator"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
