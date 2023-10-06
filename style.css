@@ -90,19 +90,19 @@ input:hover {
     gap: 10px;
 }
 
-button {
+.actions button {
     height: 50px;
     font-size: 17px;
     border-radius: 5px;
     border: 0px;
 
-    background-color: #efefef;
+    background-color: #ececec;
     color: white;
 
     transition: background-color 0.1s ease-in-out;
 }
 
-button:hover {
+.actions button:hover {
     background-color: #e3e3e3;
 }
 
