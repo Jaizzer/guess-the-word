@@ -11,9 +11,6 @@ function runGame() {
     // Word-to-guess variable.
     const wordToGuess = getWordToGuess();
 
-    // Unhide the game interface.
-    unhideMainContainer();
-
     // Save all input elements to an array.
     const inputs = [...document.querySelectorAll('input')];
 
@@ -82,8 +79,8 @@ function getWordToGuess() {
         // Display a popup message to the user.
         wordToGuess = window.prompt('Enter a 4-letter word');
 
-        // Validate user input; if it's a 4-letter word, set isInputValid to true, otherwise, alert the user.
-        if (wordToGuess.length === 4) {
+        // Validate user input; if it's a 4-letter word and not null then set 'isInputValid' to true, otherwise, alert the user.
+        if (wordToGuess !== null && wordToGuess.length === 4) {
             isInputValid = true;
         } else {
             window.alert('Please enter a 4-letter word.');
@@ -92,14 +89,6 @@ function getWordToGuess() {
 
     // Return the word to guess after converting it to uppercase and splitting it into an array of characters.
     return wordToGuess.toUpperCase().split('');
-}
-
-/**
- * Function to unhide the main container in the HTML.
- */
-function unhideMainContainer() {
-    const mainContainer = document.querySelector('#main-container');
-    mainContainer.classList.replace('hidden', 'visible');
 }
 
 /**
