@@ -92,12 +92,15 @@ input:hover {
 
 .actions button {
     height: 50px;
-    font-size: 17px;
+    
     border-radius: 5px;
     border: 0px;
 
     background-color: #d6d6d6;
     color: white;
+
+    font-size: 17px;
+    font-weight: 500;
 
     transition: background-color 0.1s ease-in-out;
 }
