@@ -1,7 +1,5 @@
 # Guess The Word
 
-![Game Logo](./img/logo.png)
-
 ## Introduction
 
 Guess The Word is a simple word-guessing game built with HTML, CSS, and JavaScript. The objective of the game is to guess a secret 4-letter word. Players enter their guesses, and the game provides feedback on whether each letter guessed is correct or not. The goal is to guess the word correctly within the given number of attempts.
