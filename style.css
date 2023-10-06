@@ -96,14 +96,14 @@ input:hover {
     border-radius: 5px;
     border: 0px;
 
-    background-color: #ececec;
+    background-color: #d6d6d6;
     color: white;
 
     transition: background-color 0.1s ease-in-out;
 }
 
 .actions button:hover {
-    background-color: #e3e3e3;
+    background-color: #c7c7c7;
 }
 
 .symbol-indicator-container {
