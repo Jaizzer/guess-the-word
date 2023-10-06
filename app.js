@@ -54,8 +54,8 @@ function runGame() {
     });
 
     // Add 'reveal-answer' feature to the new button.
-    const newButton = document.querySelector('#new');
-    newButton.addEventListener('click', () => {
+    const revealButton = document.querySelector('#reveal');
+    revealButton.addEventListener('click', () => {
         // Input the correct answer to the input elements.
         for (let i = 0; i < inputs.length; i++) {
             inputs[i].value = wordToGuess[i];
