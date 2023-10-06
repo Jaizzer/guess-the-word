@@ -1,0 +1,137 @@
+/* Import Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,100;1,300;1,500&display=swap');
+
+/* Remove some predefined stylings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background-color: #e4e4e4;
+}
+
+#main-container.hidden {
+    display: none;
+}
+
+#main-container.visible {
+    background-color: white;
+
+    padding: 60px;
+
+    border-radius: 25px;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            
+    display: grid;
+    grid-template-columns: repeat(5, 160px);
+    grid-template-rows: auto auto 160px 30px;
+    gap: 25px;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.game-title {
+    justify-self: center;
+
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+
+    font-weight: 600;
+    font-size: 35px;
+
+    display: flex;
+    align-items: end;
+    gap: 15px;
+}
+
+.game-title img {
+    height: 50px;
+    width: 50px;
+}
+
+form {
+    grid-column: 1 / 6;
+    grid-row: 3 / 4;
+
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+}
+
+input {
+    text-align: center;
+    font-size: 80px;
+
+    border: 2px solid #efefef;
+    border-radius: 5px;
+
+    transition: scale 0.1s ease-in-out;
+}
+
+input:hover {
+    scale: 1.06;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 0px;
+
+    transition: background-color 0.1s ease-in-out;
+}
+
+button:hover {
+    background-color: #e3e3e3;
+}
+
+.symbol-indicator-container {
+    grid-column: 1 / 6;
+    grid-row: 4 / 5;
+
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+}
+
+.symbol-indicator {
+    padding: 3px 0  3px 0;
+    border-radius: 5px;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.check {
+    background-color: #66db66;
+}
+
+.x {
+    background-color: #e82f2f;
+}
+
+.symbol-indicator svg {
+    height: 20px;
+    width: 20px;
+
+    fill: white;
+}
