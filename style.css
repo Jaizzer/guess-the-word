@@ -97,6 +97,7 @@ button {
     border: 0px;
 
     background-color: #efefef;
+    color: white;
 
     transition: background-color 0.1s ease-in-out;
 }
