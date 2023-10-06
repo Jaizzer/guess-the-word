@@ -96,6 +96,8 @@ button {
     border-radius: 5px;
     border: 0px;
 
+    background-color: #efefef;
+
     transition: background-color 0.1s ease-in-out;
 }
 
