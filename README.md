@@ -38,7 +38,7 @@ If you want to run the game locally, you can follow these steps:
 
 1. Clone the repository to your local machine:
 
-``git clone https://github.com/your-username/guess-the-word.git
+`git clone https://github.com/your-username/guess-the-word.git`
 
 2. Open the `index.html` file in your web browser to start playing.
 
