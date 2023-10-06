@@ -12,7 +12,7 @@ You can play the game directly by clicking [here](https://jaizzer.github.io/gues
 
 - **Interactive Gameplay**: Players can input their guesses into the provided text boxes.
 
-- **Feedback**: The game provides feedback in the form of symbols (checkmark for correct letters and 'X' for incorrect letters) to indicate whether the guessed letters are in the correct positions.
+- **Feedback**: The game provides feedback in the form of symbols (✅ for correct letters and ❌ for incorrect letters) to indicate whether the guessed letters are in the correct positions.
 
 - **Reset and Reveal**: Players can reset their guesses or reveal the correct answer using the provided buttons.
 
