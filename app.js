@@ -121,7 +121,7 @@ function populateSymbolIndicators(booleanValues) {
     // Access all symbol indicator containers and save them into an array.
     const symbolIndicator = [...document.querySelectorAll('.symbol-indicator')];
 
-    // Loop through boolean values and set the content of symbol indicator containers accordingly.
+    // Add "checkmark" and "x" svg icon based on matches inside 'booleanValues' array.
     for (let i = 0; i < booleanValues.length; i++) {
         if (booleanValues[i]) {
             symbolIndicator[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Matched!</title><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" /></svg>';
