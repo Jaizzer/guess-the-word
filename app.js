@@ -16,6 +16,19 @@ function runGame() {
     // Save all input elements to an array.
     const inputs = [...document.querySelectorAll('input')];
 
+    // Add input event listeners to move focus to the next input box.
+    inputs.forEach((input, index) => {
+        input.addEventListener('input', () => {
+            if (input.value.length === 1) {
+                // Move focus to the next input box if a character is entered and it's not the last input box.
+                const nextIndex = index < inputs.length - 1 ? index + 1 : null;
+                if (nextIndex !== null) {
+                    inputs[nextIndex].focus();
+                }
+            }
+        });
+    });
+    
     // Add a submit event listener to the form for processing guesses.
     const form = document.querySelector('form');
     form.addEventListener('submit', (event) => {
