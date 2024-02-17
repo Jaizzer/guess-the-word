@@ -156,8 +156,7 @@ function runGame() {
         for (let i = 0; i < inputs.length; i++) {
             inputs[i].value = wordToGuess[i];
         }
-        // Submit correct input by clicking submit button.
-        document.querySelector('#submit').click();
+
     });
 }
 
