@@ -111,7 +111,7 @@ function runGame() {
     
     // Add a submit event listener to the form for processing guesses.
     const form = document.querySelector('form');
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', async (event) => {
         // Prevent the form's default submit behavior.
         event.preventDefault();
 
@@ -123,6 +123,9 @@ function runGame() {
 
         // Populate symbol indicator containers with corresponding symbols.
         populateSymbolIndicators(matchResult);
+
+        // Add time delay to render the 'check' symbols before displaying alert message.
+        await new Promise((resolve) => {setTimeout(resolve, 100)});
 
         if (compareLetters && wordToGuess != undefined) {
             alert("You guessed the word! Let someone else guess, enter a new word, or select a random word!")
