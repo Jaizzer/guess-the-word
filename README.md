@@ -20,6 +20,8 @@ You can play the game directly by clicking [here](https://jaizzer.github.io/gues
 
 - **Validation**: Input validation ensures that players enter only 4-letter words.
 
+- **Random Word Picking**: Press the random word button to generate a random 4 letter English word from a set list.
+
 ## How to Play
 
 1. Open the game by [clicking here](https://jaizzer.github.io/guess-the-word/).
