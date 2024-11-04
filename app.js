@@ -127,7 +127,7 @@ function runGame() {
         // Add time delay to render the 'check' symbols before displaying alert message.
         await new Promise((resolve) => {setTimeout(resolve, 100)});
 
-        if (compareLetters.every(element => element === true) && wordToGuess != undefined && compareLetters != undefined) {
+        if (matchResult.every(element => element === true) && wordToGuess != undefined) {
             alert("You guessed the word! Let someone else guess, enter a new word, or select a random word!")
         }
     });
